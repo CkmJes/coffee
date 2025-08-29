@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daddy's Coffee</title>
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+  <link rel="stylesheet" href="./css/heritage.css" />
+  <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/choose.css" />
+     <link rel="stylesheet" href="./css/contact.css" />
+       <link rel="stylesheet" href="./css/footer.css" />
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+<header id="main-header" class="header">
+  <div class="container flex-between">
+    
+    <!-- Logo -->
+    <div id="logo" class="logo">
+      <!-- <span class="logo-icon">☕</span>
+      <div style="padding-top:10px;">
+        <h1 class="site-title">Daddy's Coffee</h1>
+        <p class="site-subtitle">Chikkamagaluru</p>
+      </div> -->
+      <img src=".\images\logo .png" class="mainlogo">
+    </div>
+
+      <nav class="nav-desktop">
+      <a href="./" class="nav-link active">Home</a>
+      <a href="./shop.html" class="nav-link">Shop</a>
+      <a href="" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Icons -->
+    <div class="icon-group">
+      <button class="icon-btn hidden-md"><i data-lucide="search"></i></button>
+      <button class="icon-btn hidden-md"><i data-lucide="heart"></i></button>
+      <button class="icon-btn hidden-md"><i data-lucide="user"></i></button>
+      <button id="cart-btn" class="icon-btn relative">
+        <i data-lucide="shopping-cart"></i>
+        <span id="cart-count" class="cart-badge hidden">0</span>
+      </button>
+      <button id="mobile-toggle" class="icon-btn mobile-only">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <nav class="mobile-nav">
+      <a href="#" class="mobile-link">Home</a>
+      <a href="#shop" class="mobile-link">Shop</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<section id="home" class="hero ">
+  <!-- Dark overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Background image (parallax) -->
+  <div class="hero-bg"></div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <div class="coffee-icon">
+      <!-- <img src="icons/coffee.svg" alt="Coffee Icon" /> -->
+       <!-- <span class="logo-icon">☕</span> -->
+        <img src=".\images\logo .png" class="mainbanlogo">
+    </div>
+    <h1>
+      Welcome to<br />
+      <span class="highlight">Daddy's Coffee</span>
+    </h1>
+    <p class="subtitle">50 Years of Brewing Excellence</p>
+    <p class="description">
+      Chikkamagaluru's largest and most trusted coffee manufacturer,
+      crafting the finest blends for over five decades
+    </p>
+    <div class="hero-buttons">
+      <button id="shop-btn" class="btn-primary">Shop Now</button>
+      <button class="btn-outline">Learn Our Story</button>
+    </div>
+  </div>
+</section>
+
+<!-------------------productcontiner----------->
+
+<section id="product-shop" class="product-container">
+  <div class="container-fluid mx-auto text-center">
+      <div class="prohead max-w-4xl mx-auto text-center">
+        <h2 class="producttitle">
+         Featured Products
+        </h2>
+        <span class="producsubtitle">Discover our most popular coffee blends</span>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+        <div class="product-cardd">
+          <div class="product-imagee">
+            <span class="badge">10% Off</span>
+          <img src=".\images\perfectbrew.png" alt="Product Image" />
+          <button class="quick-view"><a href="" class="quick-vieww">Quick View</a></button>
+          </div>
+        <!-- <div class="product-info">
+        <h3>Nike Air Max</h3>
+        <p>$129.99</p>
+        </div> -->
+         <div class="productcontet">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+                <span class="text-sm text-gray-500">250gms ,Red Pouch</span>
+              </div>
+              <h3 class="prottlt">Perfect Brew </h3>
+              <p class="propare">Continental roast, also called Vienna Roast or Full-City Roast (medium-dark).</p>
+               <div class="flex items-center mb-4">
+    <div class="flex items-center">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+    </div>
+    <span class="text-sm text-gray-500 ml-2">(124)</span>
+</div>
+            <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹1196</span><span class="text-lg text-gray-400 line-through">₹1250</span></div>
+    <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
+</div>
+
+   <div class="button-add">
+    <button class="add"> <i class="fa fa-shopping-cart"></i>
+      Add to Cart
+    </button>
+   </div>
+        </div>
+      </div>
+      </div>
+
+        <!----cloumn------------>
+      <div class="col-md-3 col-xs-12">
+        <div class="product-cardd">
+          <div class="product-imagee">
+            <span class="badge">10% Off</span>
+          <img src=".\images\brownglod.png" alt="Product Image" />
+          <button class="quick-view">Quick View</button>
+          </div>
+        <!-- <div class="product-info">
+        <h3>Nike Air Max</h3>
+        <p>$129.99</p>
+        </div> -->
+         <div class="productcontet">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+                <span class="text-sm text-gray-500">Yellow Pouch</span>
+              </div>
+              <h3 class="prottlt">Brown Gold</h3>
+              <p class="propare">Light roast with bright acidity and refreshing citrus notes.</p>
+               <div class="flex items-center mb-4">
+    <div class="flex items-center">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+    </div>
+    <span class="text-sm text-gray-500 ml-2">(124)</span>
+</div>
+            <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹916</span><span class="text-lg text-gray-400 line-through">₹1000</span></div>
+    <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
+</div>
+
+   <div class="button-add">
+    <button class="add"> <i class="fa fa-shopping-cart"></i>
+      Add to Cart
+    </button>
+   </div>
+        </div>
+      </div>
+      </div>
+      <!---------cloumn----------->
+      <div class="col-md-3 col-xs-12">
+        <div class="product-cardd">
+          <div class="product-imagee">
+            <span class="badge">10% Off</span>
+          <img src=".\images\aralianbean.png" alt="Product Image" />
+          <button class="quick-view">Quick View</button>
+          </div>
+        <!-- <div class="product-info">
+        <h3>Nike Air Max</h3>
+        <p>$129.99</p>
+        </div> -->
+         <div class="productcontet">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+                <span class="text-sm text-gray-500">250g,White Pouch</span>
+              </div>
+              <h3 class="prottlt">Arabian Bean</h3>
+              <p class="propare">Traditional Arabian Qahwa/Gahwa made from Arabica beans with unique preparation.</p>
+               <div class="flex items-center mb-4">
+    <div class="flex items-center">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+    </div>
+    <span class="text-sm text-gray-500 ml-2">(124)</span>
+</div>
+            <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹1196</span><span class="text-lg text-gray-400 line-through">₹2220</span></div>
+    <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
+</div>
+
+   <div class="button-add">
+    <button class="add"> <i class="fa fa-shopping-cart"></i>
+      Add to Cart
+    </button>
+   </div>
+        </div>
+      </div>
+      </div>
+
+
+     <!---------cloumn----------->
+      <div class="col-md-3 col-xs-12">
+        <div class="product-cardd">
+          <div class="product-imagee">
+            <span class="badge">10% Off</span>
+          <img src=".\images\darkberry.png" alt="Product Image" />
+          <button class="quick-view">Quick View</button>
+          </div>
+        <!-- <div class="product-info">
+        <h3>Nike Air Max</h3>
+        <p>$129.99</p>
+        </div> -->
+         <div class="productcontet">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+                <span class="text-sm text-gray-500">250g, Blue Pouch</span>
+              </div>
+              <h3 class="prottlt">Dark Berry</h3>
+              <p class="propare">Popular medium roast, also called House Blend, Breakfast Roast, or Medium Roast.</p>
+               <div class="flex items-center mb-4">
+    <div class="flex items-center">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-o"></i>
+    </div>
+    <span class="text-sm text-gray-500 ml-2">(124)</span>
+</div>
+            <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹996</span><span class="text-lg text-gray-400 line-through">₹1200</span></div>
+    <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
+</div>
+
+   <div class="button-add">
+    <button class="add"> <i class="fa fa-shopping-cart"></i>
+      Add to Cart
+    </button>
+   </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      </div>
+        <div class="nextpagebtn">
+          <a href="./shop.html" class="addd">View All Products</a>       
+         </div>
+    </div>
+</section>
+
+<!--------------heritagecontainer------------------->
+
+<section id="heritage" class="heritage-container">
+  <div class="container mx-auto text-center">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="heritagetit">
+       Our Heritage
+        </h2>
+      <div class="heritage-content bg-white rounded-3xl p-12 shadow-xl">
+        <p class="heritage-p">
+          At Daddy's Coffee, we are proud to be one of the largest and most trusted coffee manufacturers in India. Based in the coffee heartland of Chikkamagaluru, Karnataka, we have been crafting the finest blends for over five decades, serving coffee lovers across the country and beyond.
+        </p>
+        <p class="heritage-p">
+Our coffee is more than a beverage – it's a tradition, a passion, and a legacy nurtured through generations. With a commitment to quality and innovation, Daddy's Coffee brings you the authentic taste of Chikkamagaluru in every sip.
+        </p> 
+        <div class="row">
+    <div class="col-md-4 col-xs-6 text-center">
+        <div class="couthead">50+</div>
+        <div class="countcont">Years of Excellence</div>
+    </div>
+    <div class="col-md-4 col-xs-12 text-center">
+        <div class="couthead">1000+</div>
+        <div class="countcont">Happy Customers</div>
+    </div>
+    <div class="col-md-4 col-xs-6 text-center">
+        <div class="couthead">6</div>
+        <div class="countcont">Signature Blends</div>
+    </div>
+</div>
+      </div>
+      </div>
+    </div>
+</section>
+
+<!----------------why----------------------->
+<section id="choose" class="choosecontainer">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="heritagetit">  Why Choose Daddy's Coffee?</h2>
+      <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-6 col-xs-12 mb-4">
+        <div class="choosesection">
+          <div class="chooseimg mb-3">
+           <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <div class="choosecontent">
+            <h5 class="choosetit">Chikkamagaluru's Finest Beans</h5>
+            <p class="choosepare">
+              Sourced from lush coffee plantations, handpicked for rich aroma and signature flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12 mb-4">
+        <div class="choosesection">
+          <div class="chooseimg mb-3">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <div class="choosecontent">
+            <h5 class="choosetit">Strong Punch for Coffee Lovers</h5>
+            <p class="choosepare">
+              Sourced from lush coffee plantations, handpicked for rich aroma and signature flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-6 col-xs-12 mb-4">
+        <div class="choosesection">
+          <div class="chooseimg mb-3">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="choosecontent">
+            <h5 class="choosetit">Arabian Bean Excellence</h5>
+            <p class="choosepare">
+              Sourced from lush coffee plantations, handpicked for rich aroma and signature flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12 mb-4">
+        <div class="choosesection">
+          <div class="chooseimg mb-3">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="choosecontent">
+            <h5 class="choosetit">Perfect Brew Every Time</h5>
+            <p class="choosepare">
+              Sourced from lush coffee plantations, handpicked for rich aroma and signature flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-----------------------contact-container------------------->
+<section id="contact" class="contactcontainer">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="heritagetit">Get In Touch</h2>
+    <div class="row contact-details">
+      <div class="col-md-4 col-xs-12">
+        <div class="contact-address">
+          <i class='fas fa-map-marker-alt fonticon'></i>
+          <h3 class="addtitle">Visit Us</h3>
+          <span class="addcont">Chikkamagaluru, Karnataka,<br> India</span>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="contact-address">
+<i class='fas fa-phone-square-alt fonticon'></i>
+          <h3 class="addtitle">Call Us</h3>
+          <span class="addcont">Chikkamagaluru, Karnataka,<br> India</span>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="contact-address">
+          <i class='far fa-envelope-open fonticon'></i>
+          <h3 class="addtitle">Email Us</h3>
+          <span class="addcont">Chikkamagaluru, Karnataka,<br> India</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!---------------------footer-continer------------------->
+<section id="footer" class="footercontainer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <div class="footer-address">
+        <div id="logo" class="logo">
+          <img src=".\images\logo .png" class="footerlogo">
+    <!-- <span class="logo-icon">☕</span>
+    <div style="padding-top:10px;"> 
+        <h1 class="site-title">Daddy's Coffee</h1>
+        <p class="site-subtitle">Chikkamagaluru</p>
+    </div> -->
+      </div>
+        <span class="footer-cont">50 years of brewing excellence. From our family to yours, experience the authentic taste of Chikkamagaluru in every cup.</span>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="footer-address">
+        <h3 class="footer-title">
+          Quick Links
+        </h3>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Coffee Blends</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="footer-address">
+        <h3 class="footer-title">
+         Customer Care
+        </h3>
+        <ul class="footer-links">
+          <li><a href="">Shipping Info</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   
+  </div>
+</div>
+</section>
+
+
+</div>
+
+<script src="./js/header.js"></script>
+
+<script src="./js/header1.js"></script>
+<script src="./js/mobileview.js"></script>
+<script src="./js/hero.js"></script>
+<script src="./js/product.js"></script>
+<script src="./js/heritage.js"></script>
+<script src="./js/choose.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./js/footer.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

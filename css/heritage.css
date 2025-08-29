@@ -1,0 +1,138 @@
+#heritage{
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #fffbeb, #fff7ed);
+}
+#contact{
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #fffbeb, #fff7ed); 
+}
+.heritagetit {
+    font-size: 3rem;
+    text-align: center;
+    color: #78350f;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.heritage-content {
+    padding: 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 56rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+}
+.heritage-p{
+  font-size: 1.2rem;
+  color: #374151;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  text-align:center ;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.couthead{
+  font-size: 2.25rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  color: #d97705;
+}
+.countcont{
+  color: #4b5563;
+  line-height: 3;
+}
+.contact-address {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px;
+    border-radius: 20px;
+    background: #fff;
+}
+.addtitle{
+    font-size: 1.50rem;
+    line-height: 1.75rem;
+    margin-bottom:0.5rem;
+    font-weight:700;
+}
+.fonticon{
+  font-size:3rem;
+  margin-bottom:1rem ;
+  color:#d97705;
+}
+
+
+
+
+
+
+.about-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #fffbeb, #fff7ed); /* amber-50 to orange-50 */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.content-center {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #78350f; /* amber-900 */
+  margin-bottom: 2rem;
+}
+
+.about-box {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  font-size: 1rem;
+  color: #374151; /* gray-700 */
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #d97706; /* amber-600 */
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #4b5563; /* gray-600 */
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .about-text {
+    font-size: 1.25rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

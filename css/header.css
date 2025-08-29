@@ -1,0 +1,154 @@
+/* Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 40;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+.mainlogo{
+  width: 120px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+.header.scrolled {
+  background: #8b4513; /* SaddleBrown or your preferred brown shade */
+}
+.mainbanlogo{
+  width: 150px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.shopsection .container{
+  display: unset !important;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.site-subtitle {
+  color: #fcd34d; /* amber-300 */
+  font-size: 0.85rem;
+}
+
+/* Desktop nav */
+.nav-desktop {
+  display: flex;
+  gap: 2rem;
+}
+.nav-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #fcd34d;
+}
+
+/* Icons */
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.icon-btn:hover {
+  color: #fcd34d;
+}
+.icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cart badge */
+.cart-badge {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  background: red;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-link {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.mobile-link:hover {
+  color: #fcd34d;
+}
+
+/* Responsive rules */
+.hidden-md {
+  display: none;
+}
+.mobile-only {
+  display: block;
+}
+@media (min-width: 768px) {
+  .hidden-md {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+}
