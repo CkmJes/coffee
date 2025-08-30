@@ -77,3 +77,7 @@ lucide.createIcons();
 document.querySelector('.quick-view').addEventListener('click', function () {
   alert('Quick View clicked!');
 });
+
+
+
+
