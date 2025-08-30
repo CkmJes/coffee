@@ -102,61 +102,78 @@
 <section id="shopingproduct" class="productshop">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-xs-12">
-        <div class="product-cardd">
-          <div class="product-imagee">
-            <span class="badge">10% Off</span>
-          <img src=".\images\perfectbrew.png" alt="Product Image" />
-          <button class="quick-view"><a href="" class="quick-vieww">Quick View</a></button>
-          </div>
-        <!-- <div class="product-info">
-        <h3>Nike Air Max</h3>
-        <p>$129.99</p>
-        </div> -->
-         <div class="productcontet">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
-                <span class="text-sm text-gray-500">250gms ,Red Pouch</span>
-              </div>
-              <h3 class="prottlt">Perfect Brew </h3>
-              <p class="propare">Continental roast, also called Vienna Roast or Full-City Roast (medium-dark).</p>
-               <div class="flex items-center mb-4">
-    <div class="flex items-center">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-       <i class="fa fa-star"></i>
-       <i class="fa fa-star-o"></i>
-    </div>
-    <span class="text-sm text-gray-500 ml-2">(124)</span>
-</div>
-            <div class="flex items-center justify-between mb-4">
-    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹1196</span><span class="text-lg text-gray-400 line-through">₹1250</span></div>
-    <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
-</div>
 
-   <div class="button-add">
-    <button class="add"> <i class="fa fa-shopping-cart"></i>
-      Add to Cart
-    </button>
-   </div>
+    <!-- Product 1 -->
+    <div class="col-md-4 col-xs-12 one">
+      <div class="product-cardd" data-category="perfectbrew">
+        <div class="product-imagee" style="position:relative;">
+          <span class="badge">10% Off</span>
+          <img src="./images/perfectbrew.png" alt="Perfect Brew">
+          <button 
+            class="quick-view open-modal-btn"
+            data-title="Perfect Brew"
+            data-price="₹1196"
+            data-oldprice="₹1250"
+            data-desc="Continental roast, also called Vienna Roast or Full-City Roast (medium-dark)."
+            data-img="./images/perfectbrew.png"
+            data-blend="30% Robusta | 70% Arabica | 60% Coffee | 40% Chicory"
+            data-char="Fruity, citrus, or lemony"
+          >Quick View</button>
+        </div>
+       <div class="productcontet">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+          <span class="text-sm text-gray-500">250gms, Red Pouch</span>
+        </div>
+        <h3 class="prottlt">Perfect Brew</h3>
+        <p class="propare">Continental roast, also called Vienna Roast or Full-City Roast (medium-dark).</p>
+
+        <div class="flex items-center mb-4">
+          <div class="flex items-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <span class="text-sm text-gray-500 ml-2">(124)</span>
+        </div>
+
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-2xl font-bold text-amber-600">₹1196</span>
+            <span class="text-lg text-gray-400 line-through">₹1250</span>
+          </div>
+          <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
+        </div>
+
+        <div class="button-add">
+          <button class="add"><a href="shop.html" style="color: #fff;">
+            <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+          </button>
         </div>
       </div>
       </div>
+    </div>
 
-      <!----cloumn------------>
-      <div class="col-md-4 col-xs-12">
-        <div class="product-cardd">
-          <div class="product-imagee">
-            <span class="badge">10% Off</span>
-          <img src=".\images\brownglod.png" alt="Product Image" />
-          <button class="quick-view">Quick View</button>
-          </div>
-        <!-- <div class="product-info">
-        <h3>Nike Air Max</h3>
-        <p>$129.99</p>
-        </div> -->
-         <div class="productcontet">
+    <!-- Product 2 -->
+    <div class="col-md-4 col-xs-12 one">
+      <div class="product-cardd" data-category="browngold">
+        <div class="product-imagee" style="position:relative;">
+          <span class="badge">10% Off</span>
+          <img src="./images/brownglod.png" alt="Brown Gold">
+          <button 
+            class="quick-view open-modal-btn"
+            data-title="Brown Gold"
+            data-price="₹916"
+            data-oldprice="₹1000"
+            data-desc="Light roast with bright acidity and refreshing citrus notes."
+            data-img="./images/brownglod.png"
+            data-blend="20% Robusta | 80% Arabica | 80% Coffee | 20% Chicory"
+            data-char="Richer, fuller flavor, more body, less acidic"
+          >Quick View</button>
+        </div>
+        <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
                 <span class="text-sm text-gray-500">Yellow Pouch</span>
@@ -185,20 +202,26 @@
    </div>
         </div>
       </div>
-      </div>
-      <!---------cloumn----------->
-      <div class="col-md-4 col-xs-12">
-        <div class="product-cardd">
-          <div class="product-imagee">
-            <span class="badge">10% Off</span>
-          <img src=".\images\aralianbean.png" alt="Product Image" />
-          <button class="quick-view">Quick View</button>
-          </div>
-        <!-- <div class="product-info">
-        <h3>Nike Air Max</h3>
-        <p>$129.99</p>
-        </div> -->
-         <div class="productcontet">
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4 col-xs-12 one">
+      <div class="product-cardd" data-category="arabianbean">
+        <div class="product-imagee" style="position:relative;">
+          <span class="badge">10% Off</span>
+          <img src="./images/aralianbean.png" alt="Arabian Bean">
+          <button 
+            class="quick-view open-modal-btn"
+            data-title="Arabian Bean"
+            data-price="₹1196"
+            data-oldprice="₹2220"
+            data-desc="Traditional Arabian Qahwa/Gahwa made from Arabica beans with unique preparation."
+            data-img="./images/aralianbean.png"
+            data-blend="0% Robusta | 100% Arabica | 90% Coffee | 10% Chicory"
+            data-char="Richer, fuller flavor, more body, less acidic"
+          >Quick View</button>
+        </div>
+        <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
                 <span class="text-sm text-gray-500">250g,White Pouch</span>
@@ -227,22 +250,26 @@
    </div>
         </div>
       </div>
-      </div>
+    </div>
 
-
-     <!---------cloumn----------->
-      <div class="col-md-4 col-xs-12">
-        <div class="product-cardd" style="margin-top:40px;">
-          <div class="product-imagee">
-            <span class="badge">10% Off</span>
-          <img src=".\images\darkberry.png" alt="Product Image" />
-          <button class="quick-view">Quick View</button>
-          </div>
-        <!-- <div class="product-info">
-        <h3>Nike Air Max</h3>
-        <p>$129.99</p>
-        </div> -->
-         <div class="productcontet">
+    <!-- Product 4 -->
+    <div class="col-md-4 col-xs-12 one">
+      <div class="product-cardd" data-category="darkberry">
+        <div class="product-imagee" style="position:relative;">
+          <span class="badge">10% Off</span>
+          <img src="./images/darkberry.png" alt="Dark Berry">
+          <button 
+            class="quick-view open-modal-btn"
+            data-title="Dark Berry"
+            data-price="₹996"
+            data-oldprice="₹1200"
+            data-desc="Popular medium roast, also called House Blend, Breakfast Roast, or Medium Roast."
+            data-img="./images/darkberry.png"
+            data-blend="40% Robusta | 60% Arabica | 70% Coffee | 30% Chicory"
+            data-char="Rich aroma, earthy/oaky balanced flavors, less acidic"
+          >Quick View</button>
+        </div>
+        <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
                 <span class="text-sm text-gray-500">250g, Blue Pouch</span>
@@ -271,25 +298,28 @@
    </div>
         </div>
       </div>
-      </div>
-
-
-      <!---------cloumn----------->
-      <div class="col-md-4 col-xs-12">
-        <div class="product-cardd" style="margin-top:40px;">
-          <div class="product-imagee">
-            <span class="badge">10% Off</span>
-          <img src=".\images\strongpunch.png" alt="Product Image" />
-          <button class="quick-view">Quick View</button>
-          </div>
-        <!-- <div class="product-info">
-        <h3>Nike Air Max</h3>
-        <p>$129.99</p>
-        </div> -->
-         <div class="productcontet">
+    </div>
+      <!-- Product 5 -->
+    <div class="col-md-4 col-xs-12 one">
+      <div class="product-cardd" data-category="strongpunch">
+        <div class="product-imagee" style="position:relative;">
+          <span class="badge">10% Off</span>
+          <img src=".\images\strongpunch.png" alt="Strong Punch">
+          <button 
+            class="quick-view open-modal-btn"
+            data-title="Strong Punch"
+            data-price="₹996"
+            data-oldprice="₹1200"
+            data-desc="Popular medium roast, also called House Blend, Breakfast Roast, or Medium Roast."
+            data-img=".\images\strongpunch.png"
+            data-blend="40% Robusta | 60% Arabica | 70% Coffee | 30% Chicory"
+            data-char="Rich aroma, earthy/oaky balanced flavors, less acidic"
+          >Quick View</button>
+        </div>
+        <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
-                <span class="text-sm text-gray-500">500gms, Matte Black Pouch</span>
+                <span class="text-sm text-gray-500">250g, Blue Pouch</span>
               </div>
               <h3 class="prottlt">Strong Punch</h3>
               <p class="propare">French roast with sweeter flavors due to caramelized sugars during roasting.</p>
@@ -304,7 +334,7 @@
     <span class="text-sm text-gray-500 ml-2">(124)</span>
 </div>
             <div class="flex items-center justify-between mb-4">
-    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹796</span><span class="text-lg text-gray-400 line-through">₹820</span></div>
+    <div class="flex items-center space-x-2"><span class="text-2xl font-bold text-amber-600">₹996</span><span class="text-lg text-gray-400 line-through">₹1200</span></div>
     <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">In Stock</span>
 </div>
 
@@ -315,10 +345,56 @@
    </div>
         </div>
       </div>
+    </div>
+
+  </div>
+
+  <!-- SINGLE REUSABLE MODAL -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+
+      <!-- Left -->
+      <div class="modal-left" style="position:relative;">
+        <span class="discount-tag">10% OFF</span>
+        <img id="modalImg" src="" alt="Coffee">
       </div>
 
+      <!-- Right -->
+      <div class="modal-right">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
 
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-2xl font-bold text-amber-600" id="modalPrice"></span>
+          <span class="text-lg text-gray-400 line-through" id="modalOldPrice"></span>
+        </div>
+
+        <div class="feautersshop">
+          <h5 class="feahead">Characteristics : </h5>
+          <p id="modalChar"></p>
+          <h5 class="feahead">Blend : </h5>
+          <p id="modalBlend"></p>
+        </div>
+
+        <!-- Quantity -->
+        <div class="quantity">
+          <h5 class="qualitytitk">Quantity : </h5>
+          <button onclick="decreaseQty()">-</button>
+          <input type="text" class="qty" value="1" readonly>
+          <button onclick="increaseQty()">+</button>
+        </div>
+
+        <div class="button-add" style="padding-top:20px;">
+          <button class="add" style="width:100%;">
+            <i class="fa fa-shopping-cart"></i> Add to Cart
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
+
+  
   </div>
 </section>
 
