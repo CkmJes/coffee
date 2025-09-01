@@ -376,3 +376,50 @@ footer p {
     align-items: center;
   }
 }
+
+
+@media(max-width:767px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .producttitle {
+    font-size: 2rem;
+  }
+  .modal-content {
+flex-direction: column !important;
+width: 80% !important;
+overflow: scroll;
+height: 700px;
+  }      
+  .heritagetit {
+    font-size: 2rem;
+  }
+  .contact-address{
+    margin-bottom: 20px;
+  }
+  .mobile-link{
+    color: #8b4513;
+  }
+  .container.flex-between{
+    width: unset !important;
+  }
+  .heading {
+    font-size: 1.7rem !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
