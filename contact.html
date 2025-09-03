@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daddy's Coffee</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+  <link rel="stylesheet" href="./css/heritage.css" />
+  <link rel="stylesheet" href="./css/choose.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/shop.css"/>
+
+  <!-- Icons & Bootstrap -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body id="shoppage">
+  <div class="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+
+<header id="main-header" class="header">
+  <div class="container flex-between">
+    
+    <!-- Logo -->
+    <div id="logo" class="logo">
+      <img src=".\images\logo .png" class="mainlogo" alt="Daddy's Coffee Logo">
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-desktop">
+      <a href="./index.html" class="nav-link active">Home</a>
+      <a href="./shop.html" class="nav-link">Shop</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Icons -->
+    <div class="icon-group">
+      <button class="icon-btn hidden-md"><i data-lucide="search"></i></button>
+      <button class="icon-btn hidden-md"><i data-lucide="heart"></i></button>
+      <button class="icon-btn hidden-md"><i data-lucide="user"></i></button>
+      <button id="cart-btn" class="icon-btn relative">
+        <i data-lucide="shopping-cart"></i>
+        <span id="cart-count" class="cart-badge hidden">0</span>
+      </button>
+      <button id="mobile-toggle" class="icon-btn mobile-only">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <nav class="mobile-nav">
+      <a href="./index.html" class="mobile-link">Home</a>
+      <a href="./shop.html" class="mobile-link">Shop</a>
+      <a href="./about.html" class="mobile-link">About</a>
+      <a href="./contact.html" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!----contact section-->
+
+<section class="contactpagesection" id="contactpagecontainer">
+  <div class="container">
+    <div class="row">
+      <div class="contactfromtitle">
+        <h2 class="contfromtitle">Get in touch!</h2>
+        <span class="fromtextcont">
+          Ask a question, send us your feedback, or drop a message by filling up this form:
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contfrotitle">
+  <div class="container">
+    <div class="row">
+      <h4 class="contch">Contact Form</h4>
+    </div>
+  </div>
+</section>
+
+<section class="fromsection" id="contfromsect">
+  <div class="container form-container">
+    <form id="supportForm">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+               required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="order">Subject / Order Number</label>
+        <input type="text" id="order" name="order" placeholder="Enter order number (if any)">
+      </div>
+
+      <!-- Category -->
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="order">Order Related</option>
+          <option value="shipping">Shipping / Delivery</option>
+          <option value="payment">Payment / Billing</option>
+          <option value="b2b">B2B / Wholesale</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Subcategory -->
+      <div class="form-group" id="subcategoryGroup" style="display:none;">
+        <label for="subcategory">Subcategory</label>
+        <select id="subcategory" name="subcategory">
+          <option value="">-- Select Subcategory --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe your issue..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="regPhone">Registered Phone Number</label>
+        <input type="tel" id="regPhone" name="regPhone" placeholder="Enter registered phone number"
+               required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+      </div>
+
+        <div class="captcha-box">
+    <div class="captcha-left">
+      <input type="checkbox" id="notRobot">
+      <label for="notRobot" class="captcha-text">I'm not a robot</label>
+    </div>
+    <div class="captcha-logo">
+      <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo">
+    </div>
+  </div>
+
+
+           <button type="submit" class="sumbtn">Submit Request</button>
+       <p id="formMessage" class="message" role="alert" aria-live="polite"></p>
+
+
+
+
+    </form>
+  </div>
+</section>   
+
+
+<!---------------------footer-continer------------------->
+<section id="footer" class="footercontainer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <div class="footer-address">
+        <div id="logo" class="logo">
+          <img src=".\images\logo .png" class="footerlogo">
+    <!-- <span class="logo-icon">☕</span>
+    <div style="padding-top:10px;"> 
+        <h1 class="site-title">Daddy's Coffee</h1>
+        <p class="site-subtitle">Chikkamagaluru</p>
+    </div> -->
+      </div>
+        <span class="footer-cont">50 years of brewing excellence. From our family to yours, experience the authentic taste of Chikkamagaluru in every cup.</span>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="footer-address">
+        <h3 class="footer-title">
+          Quick Links
+        </h3>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Coffee Blends</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="footer-address">
+        <h3 class="footer-title">
+         Customer Care
+        </h3>
+        <ul class="footer-links">
+          <li><a href="">Shipping Info</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+   <div class="col-md-12">
+    <div class="footer-bottom">
+      <p>© 2025 Daddy's Coffee. All rights reserved. | Crafted with ❤️ in Chikkamagaluru</p>
+    </div>
+   </div>
+</div>
+</section>
+
+<!-- JS (load libraries first) -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Replace with your EmailJS User ID
+  emailjs.init("kowsalya0724@gmail.com");
+
+  document.getElementById("supportForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = this;
+
+    // Send form using EmailJS
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+      .then(() => {
+        document.getElementById("formMessage").textContent = "Message sent successfully!";
+        form.reset();
+      }, (err) => {
+        console.error("EmailJS error:", err);
+        document.getElementById("formMessage").textContent = "Failed to send message. Check console.";
+      });
+  });
+</script>
+
+
+
+
+
+<!-- Custom JS (kept, but contact.js removed to avoid conflicts) -->
+<script src="./js/header.js"></script>
+<script src="./js/header1.js"></script>
+<script src="./js/mobileview.js"></script>
+<script src="./js/hero.js"></script>
+<script src="./js/product.js"></script>
+<script src="./js/heritage.js"></script>
+<script src="./js/choose.js"></script>
+<!-- <script src="./js/contact.js"></script> -->
+<script src="./js/shop.js"></script>
+<script src="./js/footer.js"></script>
+</body>
+</html>
