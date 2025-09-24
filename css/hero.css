@@ -19,7 +19,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+  background-image: url('../images/banner.jpeg');
   background-size: cover;
   background-position: center;
   opacity: 0.3;
