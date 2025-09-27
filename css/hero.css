@@ -12,7 +12,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   z-index: 1;
 }
 
@@ -22,7 +22,7 @@
   background-image: url('../images/banner.jpeg');
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   z-index: 0;
  background-attachment: scroll;
   will-change: transform;
@@ -98,8 +98,27 @@ color:#fcd34d;
   .hero-buttons {
     flex-direction: row;
   }
+  
+}
+@media (max-width:767px) {
+  
+.hero-bg {
+  height: 190px;
+}
+.hero{
+  height: 80vh !important;
+}
+section#home {
+    height: 190px !important ;
+    margin-bottom: 35px !important;
+}
+.product-imagee img {
+    height:unset  !important;
+    width: unset !important;
 }
 
+
+}
 .btn-primary {
   background: linear-gradient(to right, #d97706, #c2410c);
   color: white;
