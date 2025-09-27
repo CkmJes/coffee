@@ -925,7 +925,7 @@ button:hover {
     .stars {color: #f59e0b; font-size: 17px; margin-bottom: 12px;}
     .stars span {margin-left: 6px; font-size: 12px; color: #666;}
 
-    .price {display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;}
+    .price {display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;color:#db7706;}
     .price span {font-size: 18px; font-weight: bold; color: #b45309;}
     .stock {font-size: 12px; background: #d1fae5; color: #065f46; padding: 4px 8px; border-radius: 12px;}
 
@@ -953,6 +953,7 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
+
 
 
 
