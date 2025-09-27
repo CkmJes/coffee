@@ -710,6 +710,9 @@ button.btnread a {
       .play-btn {
         bottom: -30px;
       }
+		.modal-body{
+			padding:unset !important;
+		}
     }
 
 
@@ -1107,3 +1110,4 @@ button.btnread a {
     text-align: justify;
     flex: 2;
 }
+
