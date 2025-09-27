@@ -877,6 +877,9 @@ button:hover {
     height: 300px !important;
     width: 300px !important;
       }
+      #modalDesc {
+    text-align: start !important;
+}
     }
 
     /* Product Card */
@@ -950,5 +953,6 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
+
 
 
