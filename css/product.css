@@ -34,6 +34,7 @@
   color:#d97706;
         font-size: 0.875rem;
     line-height: 1.25rem;
+    font-weight: 600;
 }
 .featured-products {
   padding: 2rem;
@@ -499,10 +500,16 @@ background: #ea580c;
 }
 
 .features li {
-  list-style: none;
-  font-size: 14px;
-  color: #444;
-  margin: 5px 0;
+    font-size: 16px;
+    color: #000;
+}
+.extra {
+    display: flex
+;
+    gap: 60px;
+    background: #f1f1f7;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Quantity Box */
@@ -513,7 +520,7 @@ background: #ea580c;
 }
 
 .quantity button {
-  padding: 6px 12px;
+  padding: 0px 5px;
   font-size: 16px;
   border: 1px solid #ccc;
   background: #f9f9f9;
@@ -521,7 +528,26 @@ background: #ea580c;
   width: 30px;
   cursor: pointer;
 }
+.icons span i {
+    font-size: 25px;
+    color: #f97316;
+    margin-bottom: 5px;
+}
+.icons span {
+    color: #000;
+}
 
+button.btnread {
+    background: #d35400;
+    width: 250px;
+    border-radius: 0px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+button.btnread a {
+    color: #fff;
+}
 .quantity input {
   width: 50px;
   text-align: center;
@@ -530,7 +556,12 @@ background: #ea580c;
   font-size: 14px;
   padding: 5px;
 }
-
+.coffetitle {
+    font-size: 2.5rem;
+    text-align: justify;
+    color: #78350f;
+    font-weight: 700;
+}
 
 
 
@@ -640,13 +671,23 @@ background: #ea580c;
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
-    .play-btn::before {
+    /* .play-btn::before {
       content: "▶";
       font-size: 24px;
       color: #000;
       font-family: sans-serif !important;
-    }
-
+    } */
+.play-btn a{
+  font-size: 24px;
+      color: #000;
+      font-family: sans-serif !important;
+}
+.icon-group button:hover {
+    background: unset;
+}
+.viewallbtn button:hover {
+    background: #d35400 !important;
+}
     /* Responsive */
     @media (max-width: 900px) {
       .coffee-section {
@@ -910,6 +951,15 @@ background: #ea580c;
         font-size: 1rem;
         text-align: center;
       }
+      .modal-body{
+        display: block !important; 
+      }
+      .aboutpage-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
     }
 
 
@@ -917,4 +967,143 @@ background: #ea580c;
     width: 100%;
     border-radius: 20px;
     border: 1px solid #000;
+}
+.features p {
+    font-size: 20px;
+    color: #000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 95%;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-left {
+  flex: 1;
+  position: relative;
+}
+.modal-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+.modal-left .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.modal-right {
+  flex: 2;
+}
+
+.category {
+  color: #d97706;
+  font-size: 18px;
+  font-weight: 500;
+}
+.modal-right h2 {
+  font-size: 30px;
+  margin: 5px 0;
+  margin-bottom: 15px;
+}
+.reviews {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.price-stock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d97706;
+}
+.old {
+  text-decoration: line-through;
+  color: gray;
+}
+.stock {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.features ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    display: flex
+;
+    gap: 60px;
+}
+.extra p {
+  margin: 5px 0;
+}
+.quantity {
+    margin: 15px 0;
+    gap: 10px;
+}
+.qty-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#qtyInput {
+  width: 40px;
+  text-align: center;
+}
+.addToCart {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: gray;
+}
+.modal-right {
+    text-align: justify;
+    flex: 2;
 }
