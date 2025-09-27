@@ -89,8 +89,8 @@
 }
 
 .product-imagee img {
-  height:300px !important;
-  width :300px !important;
+  height:250px;
+  width :250px;
   display: block;
   transition: transform 0.5s;
 }
@@ -873,6 +873,10 @@ button:hover {
       .modal-grid {
         grid-template-columns: 1fr;
       }
+      .product-imagee img {
+    height: 300px !important;
+    width: 300px !important;
+      }
     }
 
     /* Product Card */
@@ -946,3 +950,4 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
+
