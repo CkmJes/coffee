@@ -9,6 +9,9 @@
   padding: 4rem 1rem;
   text-align: center;
 }
+::marker {
+    color: #db7706;
+}
 
 /* Heading */
 .heading {
@@ -953,6 +956,7 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
+
 
 
 
