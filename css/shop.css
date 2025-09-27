@@ -89,8 +89,8 @@
 }
 
 .product-imagee img {
-  height:250px;
-  width :250px;
+  height:230px;
+  width :230px;
   display: block;
   transition: transform 0.5s;
 }
@@ -950,4 +950,5 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
+
 
