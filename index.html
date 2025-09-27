@@ -72,9 +72,9 @@
     <div class="coffee-icon">
       <!-- <img src="icons/coffee.svg" alt="Coffee Icon" /> -->
        <!-- <span class="logo-icon">☕</span> -->
-        <img src=".\images\logo .png" class="mainbanlogo">
+        <!-- <img src=".\images\logo .png" class="mainbanlogo"> -->
     </div>
-    <h1>
+    <!-- <h1>
       Welcome to<br />
       <span class="highlight">Daddy's Coffee</span>
     </h1>
@@ -86,7 +86,7 @@
     <div class="hero-buttons">
       <button id="shop-btn" class="btn-primary">Shop Now</button>
       <button class="btn-outline">Learn Our Story</button>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -108,16 +108,7 @@
         <div class="product-imagee" style="position:relative;">
           <span class="badge">10% Off</span>
           <img src="./images/perfectbrew.png" alt="Perfect Brew">
-          <button 
-            class="quick-view open-modal-btn"
-            data-title="Perfect Brew"
-            data-price="₹1196"
-            data-oldprice="₹1250"
-            data-desc="For the bold-hearted coffee lovers who crave intensity. A robust blend with deep, rich flavors that awaken your senses."
-            data-img="./images/perfectbrew.png"
-            data-blend="30% Robusta | 70% Arabica | 60% Coffee | 40% Chicory"
-            data-char="Fruity, citrus, or lemony"
-          ><i class="fa fa-eye"></i> Quick View</button>
+          <button class="quick-view open-modal-btn quickViewModal1"><i class="fa fa-eye"></i> Quick View</button>
         </div>
        <div class="productcontet">
         <div class="flex items-center justify-between mb-2">
@@ -154,6 +145,79 @@
       </div>
       </div>
     </div>
+    
+
+    
+ <!-- Quick View Modal -->
+<div id="quickViewModal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-body">
+      <!-- Left: Image -->
+      <div class="modal-left">
+        <span class="badge">10% OFF</span>
+        <img id="modalImage" src="" alt="">
+      </div>
+
+      <!-- Right: Product Details -->
+      <div class="modal-right">
+        <span class="category">Premium Blends</span>
+        <h2 id="modalTitle">Perfect Brew</h2>
+
+        <div class="reviews">
+          <span class="stars">⭐⭐⭐⭐☆</span>
+          <span id="modalReviews">(124 reviews)</span>
+        </div>
+
+        <p id="modalDesc">
+          Product description goes here...
+        </p>
+
+        <div class="price-stock">
+          <span id="modalPrice" class="price">₹650</span>
+          <span id="modalOldPrice" class="old">₹720</span>
+          <span class="stock">In Stock</span>
+        </div>
+
+        <div class="features">
+          <p><b>Key Features:</b></p>
+          <ul id="modalFeatures">
+            <li>Smooth Texture</li>
+            <li>Exotic Flavor</li>
+            </ul>
+            <ul id="modalFeatures">
+            <li>Premium Quality</li>
+            <li>Low Acidity</li>
+          </ul>
+        </div>
+
+        <div class="extra">
+          <p><b>Roast Level:</b> <br><span id="modalRoast">Medium</span></p>
+          <p><b>Origin:</b> <br><span id="modalOrigin">Arabian Peninsula</span></p>
+        </div>
+
+        <div class="quantity">
+          <label>Quantity:</label>
+          <button class="qty-btn" onclick="decreaseQty()">-</button>
+          <input type="text" id="qtyInput" value="1">
+          <button class="qty-btn" onclick="increaseQty()">+</button>
+        </div>
+
+        <button class="addToCart">
+          🛒 Add to Cart
+        </button>
+
+        <div class="icons">
+          <span><i class="fa fa-truck" aria-hidden="true"></i><br> Free Delivery</span>
+          <span><i class="fa fa-shield" aria-hidden="true"></i><br> Quality Assured</span>
+          <span><i class="fa fa-trophy" aria-hidden="true"></i> <br>50+ Years Legacy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Product 2 -->
     <div class="col-md-3 col-xs-12">
@@ -161,20 +225,11 @@
         <div class="product-imagee" style="position:relative;">
           <span class="badge">10% Off</span>
           <img src="./images/brownglod.png" alt="Brown Gold">
-          <button 
-            class="quick-view open-modal-btn"
-            data-title="Brown Gold"
-            data-price="₹916"
-            data-oldprice="₹1000"
-            data-desc="Light roast with bright acidity and refreshing citrus notes."
-            data-img="./images/brownglod.png"
-            data-blend="20% Robusta | 80% Arabica | 80% Coffee | 20% Chicory"
-            data-char="Richer, fuller flavor, more body, less acidic"
-          ><i class="fa fa-eye"></i> Quick View</button>
+           <button class="quick-view open-modal-btn quickViewModal2"><i class="fa fa-eye"></i> Quick View</button>
         </div>
         <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
+                <span class="text-sm text-amber-600 font-medium">Luxury Collection</span>
                 <span class="text-sm text-gray-500">250g</span>
               </div>
               <h3 class="prottlt">Brown Gold</h3>
@@ -203,22 +258,89 @@
       </div>
     </div>
 
+
+   
+    
+ <!-- Quick View Modal -->
+<div id="quickViewModal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-body">
+      <!-- Left: Image -->
+      <div class="modal-left">
+        <span class="badge">10% OFF</span>
+        <img id="modalImage" src="./images/brownglod.png" alt="">
+      </div>
+
+      <!-- Right: Product Details -->
+      <div class="modal-right">
+        <span class="category">Luxury Collection</span>
+        <h2 id="modalTitle">Brown Gold</h2>
+
+        <div class="reviews">
+          <span class="stars">⭐⭐⭐⭐☆</span>
+          <span id="modalReviews">(124 reviews)</span>
+        </div>
+
+        <p id="modalDesc">
+          The taste of luxury in every precious sip. Our most premium blend with golden undertones and exceptional smoothness.
+        </p>
+
+        <div class="price-stock">
+          <span id="modalPrice" class="price">₹750</span>
+          <span id="modalOldPrice" class="old">₹850</span>
+          <span class="stock">In Stock</span>
+        </div>
+
+        <div class="features">
+          <p><b>Key Features:</b></p>
+          <ul id="modalFeatures">
+            <li>Luxury Blend</li>
+            <li>Golden Finish</li>
+            </ul>
+            <ul id="modalFeatures">
+            <li>Ultra Premium</li>
+            <li>Limited Stock</li>
+          </ul>
+        </div>
+
+        <div class="extra">
+          <p><b>Roast Level:</b> <br><span id="modalRoast">Light</span></p>
+          <p><b>Origin:</b><br> <span id="modalOrigin">Chikkamagaluru, Karnataka</span></p>
+        </div>
+
+        <div class="quantity">
+          <label>Quantity:</label>
+          <button class="qty-btn" onclick="decreaseQty()">-</button>
+          <input type="text" id="qtyInput" value="1">
+          <button class="qty-btn" onclick="increaseQty()">+</button>
+        </div>
+
+        <button class="addToCart">
+          🛒 Add to Cart
+        </button>
+
+        <div class="icons">
+          <span><i class="fa fa-truck" aria-hidden="true"></i><br> Free Delivery</span>
+          <span><i class="fa fa-shield" aria-hidden="true"></i><br> Quality Assured</span>
+          <span><i class="fa fa-trophy" aria-hidden="true"></i> <br>50+ Years Legacy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
     <!-- Product 3 -->
     <div class="col-md-3 col-xs-12">
       <div class="product-cardd">
         <div class="product-imagee" style="position:relative;">
           <span class="badge">10% Off</span>
           <img src="./images/aralianbean.png" alt="Arabian Bean">
-          <button 
-            class="quick-view open-modal-btn"
-            data-title="Arabian Bean"
-            data-price="₹1196"
-            data-oldprice="₹2220"
-            data-desc="Traditional Arabian Qahwa/Gahwa made from Arabica beans with unique preparation."
-            data-img="./images/aralianbean.png"
-            data-blend="0% Robusta | 100% Arabica | 90% Coffee | 10% Chicory"
-            data-char="Richer, fuller flavor, more body, less acidic"
-          ><i class="fa fa-eye"></i> Quick View</button>
+           <button class="quick-view open-modal-btn quickViewModal3"><i class="fa fa-eye"></i> Quick View</button>
         </div>
         <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
@@ -250,6 +372,80 @@
         </div>
       </div>
     </div>
+  
+
+       
+    
+ <!-- Quick View Modal -->
+<div id="quickViewModal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-body">
+      <!-- Left: Image -->
+      <div class="modal-left">
+        <span class="badge">10% OFF</span>
+        <img id="modalImage" src="./images/aralianbean.png" alt="">
+      </div>
+
+      <!-- Right: Product Details -->
+      <div class="modal-right">
+        <span class="category">Premium Blends</span>
+        <h2 id="modalTitle">Arabian Bean</h2>
+
+        <div class="reviews">
+          <span class="stars">⭐⭐⭐⭐☆</span>
+          <span id="modalReviews">(124 reviews)</span>
+        </div>
+
+        <p id="modalDesc">
+          Smooth, exotic & premium Arabian excellence. Experience the luxurious taste of carefully selected Arabian beans.
+</p>
+
+        <div class="price-stock">
+          <span id="modalPrice" class="price">₹650</span>
+          <span id="modalOldPrice" class="old">₹720</span>
+          <span class="stock">In Stock</span>
+        </div>
+
+        <div class="features">
+          <p><b>Key Features:</b></p>
+          <ul id="modalFeatures">
+            <li>Smooth Texture</li>
+            <li>Exotic Flavor</li>
+            </ul>
+            <ul id="modalFeatures">
+            <li>Premium Quality</li>
+            <li>Low Acidity</li>
+          </ul>
+        </div>
+
+        <div class="extra">
+          <p><b>Roast Level:</b> <br><span id="modalRoast">Medium</span></p>
+          <p><b>Origin:</b><br> <span id="modalOrigin">Arabian Peninsula</span></p>
+        </div>
+
+        <div class="quantity">
+          <label>Quantity:</label>
+          <button class="qty-btn" onclick="decreaseQty()">-</button>
+          <input type="text" id="qtyInput" value="1">
+          <button class="qty-btn" onclick="increaseQty()">+</button>
+        </div>
+
+        <button class="addToCart">
+          🛒 Add to Cart
+        </button>
+
+        <div class="icons">
+          <span><i class="fa fa-truck" aria-hidden="true"></i><br> Free Delivery</span>
+          <span><i class="fa fa-shield" aria-hidden="true"></i><br> Quality Assured</span>
+          <span><i class="fa fa-trophy" aria-hidden="true"></i> <br>50+ Years Legacy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Product 4 -->
     <div class="col-md-3 col-xs-12">
@@ -257,21 +453,12 @@
         <div class="product-imagee" style="position:relative;">
           <span class="badge">10% Off</span>
           <img src="./images/darkberry.png" alt="Dark Berry">
-          <button 
-            class="quick-view open-modal-btn"
-            data-title="Dark Berry"
-            data-price="₹996"
-            data-oldprice="₹1200"
-            data-desc="Popular medium roast, also called House Blend, Breakfast Roast, or Medium Roast."
-            data-img="./images/darkberry.png"
-            data-blend="40% Robusta | 60% Arabica | 70% Coffee | 30% Chicory"
-            data-char="Rich aroma, earthy/oaky balanced flavors, less acidic"
-          ><i class="fa fa-eye"></i> Quick View</button>
+           <button class="quick-view open-modal-btn quickViewModal4"><i class="fa fa-eye"></i> Quick View</button>
         </div>
         <div class="productcontet">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
-                <span class="text-sm text-gray-500">250g</span>
+                <span class="perutext text-sm text-amber-600 font-medium">Specialty Blends</span>
+                <span class="perutextt text-sm text-gray-500">250g</span>
               </div>
               <h3 class="prottlt">Dark Berry</h3>
               <p class="propare">The taste of luxury in every precious sip. Our most premium....</p>
@@ -301,59 +488,115 @@
 
   </div>
 
-  <!-- SINGLE REUSABLE MODAL -->
-  <div id="productModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
+ <!-- Quick View Modal -->
+<div id="quickViewModal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
 
-      <!-- Left -->
-      <div class="modal-left" style="position:relative;">
-        <span class="discount-tag">10% OFF</span>
-        <img id="modalImg" src="" alt="Coffee">
+    <div class="modal-body">
+      <!-- Left: Image -->
+      <div class="modal-left">
+        <span class="badge">10% OFF</span>
+        <img id="modalImage" src="./images/darkberry.png" alt="">
       </div>
 
-      <!-- Right -->
+      <!-- Right: Product Details -->
       <div class="modal-right">
-        <div class="flex items-center justify-between mb-2">
-                <span class="text-sm text-amber-600 font-medium">Premium Blends</span>
-              </div>
-        <h3 id="modalTitle"></h3>
-        <p id="modalDesc"></p>
+        <span class="category">Specialty Blends</span>
+        <h2 id="modalTitle">Dark Berry</h2>
 
-        <div class="flex items-center justify-between mb-4">
-          <span class="text-2xl font-bold text-amber-600" id="modalPrice"></span>
-          <span class="text-lg text-gray-400 line-through" id="modalOldPrice"></span>
+        <div class="reviews">
+          <span class="stars">⭐⭐⭐⭐☆</span>
+          <span id="modalReviews">(124 reviews)</span>
         </div>
 
-        <div class="feautersshop">
-          <h5 class="feahead">Characteristics : </h5>
-          <p id="modalChar"></p>
-          <h5 class="feahead">Blend : </h5>
-          <p id="modalBlend"></p>
+        <p id="modalDesc">
+         A layered flavor journey for true connoisseurs. Complex berry undertones with a sophisticated finish.
+        </p>
+
+        <div class="price-stock">
+          <span id="modalPrice" class="price">₹580</span>
+          <span id="modalOldPrice" class="old">₹620</span>
+          <span class="stock">In Stock</span>
         </div>
 
-        <!-- Quantity -->
+        <div class="features">
+          <p><b>Key Features:</b></p>
+          <ul id="modalFeatures">
+            <li>Berry Notes</li>
+            <li>Complex Flavor</li>
+            </ul>
+            <ul id="modalFeatures">
+            <li>Artisan Roasted</li>
+            <li>Limited Edition </li>
+          </ul>
+        </div>
+
+        <div class="extra">
+          <p><b>Roast Level:</b> <br><span id="modalRoast">Medium</span></p>
+          <p><b>Origin:</b><br> <span id="modalOrigin">Chikkamagaluru, Karnataka</span></p>
+        </div>
+
         <div class="quantity">
-          <h5 class="qualitytitk">Quantity : </h5>
-          <button onclick="decreaseQty()">-</button>
-          <input type="text" class="qty" value="1" readonly>
-          <button onclick="increaseQty()">+</button>
+          <label>Quantity:</label>
+          <button class="qty-btn" onclick="decreaseQty()">-</button>
+          <input type="text" id="qtyInput" value="1">
+          <button class="qty-btn" onclick="increaseQty()">+</button>
         </div>
 
-        <div class="button-add" style="padding-top:20px;">
-          <button class="add" style="width:100%;">
-            <i class="fa fa-shopping-cart"></i> Add to Cart
-          </button>
+        <button class="addToCart">
+          🛒 Add to Cart
+        </button>
+
+         <div class="icons">
+          <span><i class="fa fa-truck" aria-hidden="true"></i><br> Free Delivery</span>
+          <span><i class="fa fa-shield" aria-hidden="true"></i><br> Quality Assured</span>
+          <span><i class="fa fa-trophy" aria-hidden="true"></i> <br>50+ Years Legacy</span>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
+  <!-- Quick View Modal -->
+<!-- <div id="quickViewModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <div class="modal-body">
+      <div class="modal-img">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-details">
+        
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="price">
+          <span id="modalPrice"></span>
+          <span id="modalOldPrice" class="line-through"></span>
+        </div>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="viewallbtn">
+  <button class="btnread"><a href="shop.html"> View All Products</a></button>
+</div>
 
 </section>
-
-
-
 <!--------------productback------------>
+
+<section class="coffecsectionhead">
+  <div class="container mx-auto">
+    <div class="coffeheadsec">
+    <h2 class="coffetitle">Brew Better with Beachville</h2>
+    <p class="coffedecpare">Discover curated blends, tasting notes, and expert tips to craft coffee the way you like it.</p>
+  </div>
+</div>
+</section>
 
 <section class="coffee-section">
   <!-- Left Image -->
@@ -378,8 +621,10 @@
     <img src="./images/effect_img5.avif" class="bean bean3" alt="bean">
 
     <!-- Play Button -->
-    <div class="play-btn"></div>
-  </div>
+    <div class="play-btn">
+  <a href="./images/coffeevideo.mp4" target="_blank">▶</a>
+</div>
+
 </section>
 
 <!-----------------secproduct------------------>
@@ -394,18 +639,16 @@
 
       <!-- Right Text -->
       <div class="araku-right">
-        <h2>New to ARAKU Coffee?</h2>
+        <h2>New to Daddy's Coffee?</h2>
         <p>
-          Drinking specialty coffee and tasting its nuances can actually develop your palate! 
-          ARAKU coffee is grown on ancestral terroirs in the Araku highlands tucked in the Eastern Ghats of India. 
-          Pure Arabica with a rare aromatic profile, each selection makes for a smooth, well-balanced cup. 
-          You are invited to slow down and savour... the notes of berry, caramel and vanilla in Grand Reserve, 
-          chocolate and spice in Signature, and the fruity Micro Climate, to begin with!
+          Drinking speciality coffee is more than a ritual—it’s a journey of taste, aroma, and heritage. At Daddy’s Coffee, we bring you beans grown on ancestral terroirs in the lush highlands of Chikkamagaluru, nestled in the Eastern Ghats of South India.
         </p>
-        
+        <p>Our 100% Arabica beans are carefully cultivated and handpicked to preserve their rare aromatic profile. Each cup reflects the richness of the land, offering a smooth, well-balanced experience that invites you to slow down and savour life’s finer moments.</p>
+        <p>With every sip of Daddy’s Coffee, you’re not just enjoying coffee—you’re tasting the story of South India’s legendary coffee region.
+</p>
         <!-- Links -->
         <div class="araku-links">
-          <a href="#">Match me a cup →</a>
+          <!-- <a href="#">Match me a cup →</a> -->
           <a href="#">Learn to brew →</a>
         </div>
       </div>
@@ -456,7 +699,7 @@
 
       <!-- Right Text -->
       <div class="araku-right">
-        <h2>Find ARAKU near you</h2>
+        <h2>Find Daddy's Coffee near you</h2>
         <p>
           Minimalist spaces that house specialty coffee, fine food, organic wine and hand-picked books to foster conversations.
         </p>
@@ -541,7 +784,7 @@ Our coffee is more than a beverage – it's a tradition, a passion, and a legacy
       </div>
      
 
-      <div class="row">
+      <div class="row" style="margin-right: unset !important;">
       <!-- Column 1 -->
       <div class="col-md-6 col-xs-12 mb-4">
         <div class="choosesection" style="margin-right: 20px; margin-left: 20px;">
@@ -663,7 +906,7 @@ Our coffee is more than a beverage – it's a tradition, a passion, and a legacy
 </div>
 
 <script src="./js/header.js"></script>
-
+<script src="./js/productdetails.js"></script>
 <script src="./js/header1.js"></script>
 <script src="./js/mobileview.js"></script>
 <script src="./js/hero.js"></script>
