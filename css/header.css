@@ -4,11 +4,11 @@ body {
   font-family: Arial, sans-serif;
 }
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 40;
-  background: transparent;
+  background: #7c2b00;
   transition: background 0.3s ease;
 }
 .mainlogo{
