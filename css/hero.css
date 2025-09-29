@@ -1,3 +1,50 @@
+h1, h2, h3, h4, h5, h6, p, a, span, div{
+  font-family: "Georgia", serif !important;
+}
+
+
+.coffeesection {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+.contcoggg {
+    padding-left: 46px;
+}
+.coffeesection h2 {
+  font-size: 2.5rem;
+  font-family: "Georgia", serif;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.coffeesection p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Coffee Bean Images */
+.bean {
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+.bean1 {
+  top: 20%;
+  left: 5%;
+}
+
+.bean2 {
+  bottom: 15%;
+  right: 10%;
+}
+
+.bean3 {
+  top: 50%;
+  right: 20%;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -19,7 +66,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../images/banner.jpeg');
+  background-image: url('../images/Webbanner.jpg');
   background-size: cover;
   background-position: center;
   /* opacity: 0.3; */
@@ -116,6 +163,24 @@ section#home {
     height:unset  !important;
     width: unset !important;
 }
+.slider{
+  width: 340px !important;
+}
+.slider li{
+  width: 300px !important;
+}
+.topheader {
+    height: 73px !important;
+}
+.contcoggg {
+  
+    padding: 10px;
+}
+.coffee-left {
+    max-width: 100% !important;
+}
+
+
 
 
 }
