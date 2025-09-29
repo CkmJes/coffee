@@ -48,6 +48,9 @@
 #product-shop{
   margin-top:3rem;
   margin-bottom: 3rem;
+	    position: relative;
+    margin-top: 400px;
+    background: #ffffff75;
   
 }
 .justify-between {
@@ -1407,4 +1410,5 @@ button.btnread a {
     height: 50px;
     background: #d49f47;
 }
+
 
