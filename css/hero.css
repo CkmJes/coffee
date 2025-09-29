@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, div{
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #78350f, #7c2d12, #7f1d1d);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-overlay {
@@ -222,6 +222,7 @@ section#home {
   background-color: #fcd34d;
   color: #78350f;
 }
+
 
 
 
