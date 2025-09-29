@@ -251,3 +251,30 @@ function increaseQty() {
   let value = parseInt(qty.value) || 1;
   qty.value = value + 1;
 }
+
+
+
+ 
+    const playBtn = document.getElementById("playBtn");
+    const thumbnail = document.getElementById("videoThumbnail");
+    const video = document.getElementById("coffeeVideo");
+
+    playBtn.addEventListener("click", () => {
+      thumbnail.style.display = "none";  // hide image
+      playBtn.style.display = "none";    // hide play button
+      video.style.display = "block";     // show video
+      video.play();                      // auto play video
+    });
+  
+
+
+    let index = 0;
+const texts = document.querySelectorAll(".headtiop");
+
+function showNextText() {
+  texts[index].classList.remove("active");
+  index = (index + 1) % texts.length;
+  texts[index].classList.add("active");
+}
+
+setInterval(showNextText, 3000); // change every 3 seconds
