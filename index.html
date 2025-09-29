@@ -19,7 +19,33 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+ <section class="topheader">
+  <div class="container">
+    <div class="content-slider">
+  <div class="slider">
+    <div class="mask">
+      <ul>
+        <li class="anim1">
+          <div class="quote">10% Off, Use the Code FIRST10</div>
+        </li>
+        <li class="anim2">
+          <div class="quote">Enjoy free shipping across India on orders above Rs. 1400</div>
+        </li>
+        <li class="anim3">
+          <div class="quote">10% Off, Use the Code FIRST10</div>
+        </li>
+        <li class="anim4">
+          <div class="quote">Enjoy free shipping across India on orders above Rs. 1400</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+
+    
 <header id="main-header" class="header">
   <div class="container flex-between">
     
@@ -589,20 +615,32 @@
 </section>
 <!--------------productback------------>
 
-<section class="coffecsectionhead">
-  <div class="container mx-auto">
-    <div class="coffeheadsec">
-    <h2 class="coffetitle">Brew Better with Beachville</h2>
-    <p class="coffedecpare">Discover curated blends, tasting notes, and expert tips to craft coffee the way you like it.</p>
+<section class="coffeesection">
+  <div class="contcoggg">
+  <h2>Brew Better with Beachville</h2>
+  <p>Discover curated blends, tasting notes, and expert tips to craft coffee the way you like it.</p>
+
+  <!-- Floating Coffee Beans -->
+  <img src="./images/effect_img5.avif" class="bean1" alt="Coffee Bean">
+  <img src="./images/effect_img5.avif" class="bean bean2" alt="Coffee Bean">
+  <img src="./images/effect_img5.avif" class="bean bean3" alt="Coffee Bean">
   </div>
-</div>
 </section>
 
 <section class="coffee-section">
-  <!-- Left Image -->
-  <div class="coffee-left">
-    <img src="./images/green-coffee.webp" alt="Coffee Beans">
-  </div>
+  
+  <!-- Left Side (Thumbnail + Video) -->
+    <div class="coffee-left">
+      <!-- Thumbnail -->
+      <img src="./images/green-coffee.webp" alt="Coffee Beans" id="videoThumbnail">
+      <div class="play-btn" id="playBtn">▶</div>
+
+      <!-- Hidden Video -->
+      <video id="coffeeVideo" controls style="display:none;">
+        <source src="./images/coffeevideo.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
 
   <!-- Right Side -->
   <div class="coffee-right">
@@ -616,14 +654,13 @@
     </div>
 
     <!-- Floating Beans -->
-    <img src="./images/effect_img5.avif" class="bean bean1" alt="bean">
     <img src="./images/effect_img5.avif" class="bean bean2" alt="bean">
     <img src="./images/effect_img5.avif" class="bean bean3" alt="bean">
 
     <!-- Play Button -->
-    <div class="play-btn">
+    <!-- <div class="play-btn">
   <a href="./images/coffeevideo.mp4" target="_blank">▶</a>
-</div>
+</div> -->
 
 </section>
 
@@ -649,7 +686,7 @@
         <!-- Links -->
         <div class="araku-links">
           <!-- <a href="#">Match me a cup →</a> -->
-          <a href="#">Learn to brew →</a>
+          <a href="shop.html">Shop Now →</a>
         </div>
       </div>
 
@@ -667,21 +704,29 @@
 
     <!-- Right Text -->
     <div class="classic-right">
-      <h2>CREATOR OF THE CLASSIC EXPERIENCE</h2>
-      <p>
-        With a heritage and expertise in growing coffee that spans 5 generations, 
-        we offer a wide range of coffees with a delightfully unique personality and taste profile.
-      </p>
-      <p>
-        These 100% pure coffee come with zero additives, such as chicory – 
-        to provide you with an unblemished coffee experience.
-      </p>
-      <p>
-        Bringing the exquisite flavours of coffee to your kitchen is an art that we 
-        have excelled in for over 150 years now. Whether your preference is for a strong 
-        Italian style espresso, brewed with a French Press; or a traditional South Indian filter coffee, 
-        you will find a Classic that suits your taste perfectly.
-      </p>
+      <h2> Our Heritage</h2>
+      <div class=" rounded-3xl p-12 shadow-xl">
+        <p class="heritage-p">
+          At Daddy's Coffee, we are proud to be one of the largest and most trusted coffee manufacturers in India. Based in the coffee heartland of Chikkamagaluru, Karnataka, we have been crafting the finest blends for over five decades, serving coffee lovers across the country and beyond.
+        </p>
+        <p class="heritage-p">
+Our coffee is more than a beverage – it's a tradition, a passion, and a legacy nurtured through generations. With a commitment to quality and innovation, Daddy's Coffee brings you the authentic taste of Chikkamagaluru in every sip.
+        </p> 
+        <div class="row">
+    <div class="col-md-4 col-xs-6 text-center">
+        <div class="couthead">50+</div>
+        <div class="countcont">Years of Excellence</div>
+    </div>
+    <div class="col-md-4 col-xs-12 text-center">
+        <div class="couthead">1000+</div>
+        <div class="countcont">Happy Customers</div>
+    </div>
+    <div class="col-md-4 col-xs-6 text-center">
+        <div class="couthead">6</div>
+        <div class="countcont">Signature Blends</div>
+    </div>
+</div>
+      </div>
     </div>
   </div>
 </section>
@@ -716,7 +761,7 @@
 
 <!--------------heritagecontainer------------------->
 
-<section id="heritage" class="heritage-container">
+<!-- <section id="heritage" class="heritage-container">
   <div class="container mx-auto text-center">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="heritagetit">
@@ -746,7 +791,7 @@ Our coffee is more than a beverage – it's a tradition, a passion, and a legacy
       </div>
       </div>
     </div>
-</section>
+</section> -->
 
 <!----------------why----------------------->
 <section id="choose" class="choosecontainer">
