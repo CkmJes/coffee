@@ -9,9 +9,6 @@
   padding: 4rem 1rem;
   text-align: center;
 }
-::marker {
-    color: #db7706;
-}
 
 /* Heading */
 .heading {
@@ -92,8 +89,8 @@
 }
 
 .product-imagee img {
-  height:230px;
-  width :230px;
+  height:250px;
+  width :250px;
   display: block;
   transition: transform 0.5s;
 }
@@ -184,7 +181,9 @@ color: #fff;
     padding-top: 20px;
 }
 .container.two.mx-auto.text-center {
-    display: grid !important;
+    display: grid !important
+;
+    max-width: 1274px;
 }
 /* .product-imagee img {
     height: 230px !important ;
@@ -595,6 +594,10 @@ button:hover {
       .modal-grid {
         grid-template-columns: 1fr;
       }
+      .product-imagee img {
+    height: 300px !important;
+    width: 300px !important;
+      }
     }
 
     /* Product Card */
@@ -876,13 +879,18 @@ button:hover {
       .modal-grid {
         grid-template-columns: 1fr;
       }
-      .product-imagee img {
-    height: 300px !important;
-    width: 300px !important;
+      .modal-body{
+        padding: unset !important;
       }
-      #modalDesc {
-    text-align: start !important;
-}
+      .features ul {
+         list-style: disc;
+         padding-left: 20px;
+         margin-top: 5px;
+         display: block;
+         gap: 60px;
+                 margin-bottom: unset;
+      }
+
     }
 
     /* Product Card */
@@ -928,7 +936,7 @@ button:hover {
     .stars {color: #f59e0b; font-size: 17px; margin-bottom: 12px;}
     .stars span {margin-left: 6px; font-size: 12px; color: #666;}
 
-    .price {display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;color:#db7706;}
+    .price {display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; color: #ffc83d;}
     .price span {font-size: 18px; font-weight: bold; color: #b45309;}
     .stock {font-size: 12px; background: #d1fae5; color: #065f46; padding: 4px 8px; border-radius: 12px;}
 
@@ -938,7 +946,12 @@ button:hover {
       font-size: 15px; cursor: pointer; transition: background 0.3s ease;
     }
     .add-cart:hover {background: linear-gradient(90deg, #92400e, #b45309);}
-
+::marker {
+    color: #ffc83d;
+}
+button:hover{
+  background: #f97316;
+}
     /* Modal */
     .modal-overlay {
       display: none; position: fixed; inset: 0;
@@ -956,8 +969,3 @@ button:hover {
       position: absolute; right: 22px; top: 18px;
       font-size: 2em; color: #757575; cursor: pointer;
     }
-
-
-
-
-
