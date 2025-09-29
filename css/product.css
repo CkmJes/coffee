@@ -46,6 +46,9 @@
   text-align: center;
 }
 #product-shop{
+  background: #e1dada4f;
+  margin-top: 400px;
+  position: relative;
   margin-top:3rem;
   margin-bottom: 3rem;
   
@@ -1407,6 +1410,7 @@ button.btnread a {
     height: 50px;
     background: #d49f47;
 }
+
 
 
 
